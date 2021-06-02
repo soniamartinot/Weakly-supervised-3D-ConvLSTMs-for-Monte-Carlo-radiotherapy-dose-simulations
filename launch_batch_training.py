@@ -9,8 +9,6 @@ args = parser.parse_args()
 
 n_pools = int(args.n_pools)
 
-# Choose model to use
-
 def launching(n_pool):
     os.system("python3 launch_trainings.py  {} {}".format(n_pools, n_pool))
 
